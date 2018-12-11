@@ -73,9 +73,9 @@ public class TaoSV extends JFrame {
 		JButton btnCreate = new JButton("Create");
 		btnCreate.setBounds(84, 135, 89, 23);
 		contentPane.add(btnCreate);
-		
-		JButton btnNewButton = new JButton("Update");
-		btnNewButton.addActionListener(new ActionListener() {
+		// tao Update
+		JButton btnUpdate = new JButton("Update");
+		btnUpdate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					connectDB();
@@ -86,8 +86,12 @@ public class TaoSV extends JFrame {
 				}
 			}
 		});
-		btnNewButton.setBounds(183, 135, 89, 23);
-		contentPane.add(btnNewButton);
+		btnUpdate.setBounds(183, 135, 89, 23);
+		contentPane.add(btnUpdate);
+		
+		JButton btnDelete = new JButton("Delete");
+		btnDelete.setBounds(282, 135, 89, 23);
+		contentPane.add(btnDelete);
 		
 		btnCreate.addActionListener(new ActionListener() {
 			
